@@ -5,7 +5,7 @@ int main() {
     char operator;
     double num1, num2, result;
 
-    printf("Enter an operator (+, -, *, /): ");
+    printf("Enter an operator (+, -, *, /,^): ");
     scanf(" %c", &operator);
 
 
@@ -30,6 +30,9 @@ int main() {
                 return 1; 
             }
             break;
+        case '^':
+            result = pow(num1, num2);
+            break;            
         default:
             printf("Error: Invalid operator.\n");
             return 1; 
